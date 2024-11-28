@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Sticky Header */
+header {
+  background-color: rgba(255, 112, 67, 0.8);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+/* Background image for the index page */
+body.index-bg {
+  background-image: url("https://img.freepik.com/free-photo/top-view-colored-bell-peppers-with-different-seasonings-grey-background-vegetable-pepper-spicy-hot-food_140725-74491.jpg?t=st=1732092041~exp=1732095641~hmac=7c6fdd30f2545b3fbc7809941df4bc19fb1f84e200fa7d1862c6019031157a26&w=826");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+/* Section styling */
+.section {
+  padding: 50px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#recipe-list {
+  margin: 20px;
+}
+
+#recipe-list h2 {
+  color: #ff7043;
+  margin-bottom: 15px;
+}
+
+/* Search bar styling */
+#searchBar {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Recipe list styling */
+#recipeItems {
+  list-style-type: none;
+  padding: 0;
+}
+
+#recipeItems li {
+  margin: 10px 0;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+#recipeItems li a {
+  color: #333;
+  text-decoration: none;
+}
+
+#recipeItems li:hover {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 5px;
+}
+.recipe-image {
+    float: left; /* Float the image to the left */
+    width: 150px; /* Set a width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between the image and the text */
+    margin-top: 10px; /* Add some space at the top */
+}
+
+header h1 {
+    clear: both; /* Ensure the heading does not wrap around the floated image */
+}
+
